@@ -17,6 +17,6 @@ Useful for quick identification of potential TEs in sequence sets that can be pr
 2. Choose which files you want to include (ie: all of them, eukarotyoes only, only mice, etc.)
 3. Place those files in a directory
 4. Run `python convert-repbase.py` specifying the directory where you decompressed Repbase.
-5. Build a blast DB with this fasta file: `formatdb -in REPBASE.FASTA -out XXXX -dbtype 'nucl'`
+5. Build a blast DB with this fasta file: `makeblastdb -in REPBASE.FASTA -out XXXX -dbtype 'nucl'`
 6. Run `python transeeker.py` specifying your new blastdb and a directory of sequence files in fasta format to check.
   7. The results are in the form of a CSV file that can easily be parsed with code or opened in Excel, LibreOffice etc.
