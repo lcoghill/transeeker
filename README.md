@@ -20,3 +20,4 @@ Useful for quick identification of potential TEs in sequence sets that can be pr
 5. Build a blast DB with this fasta file: `makeblastdb -in REPBASE.FASTA -out XXXX -dbtype 'nucl'`
 6. Run `python transeeker.py` specifying your new blastdb and a directory of sequence files in fasta format to check.
   7. The results are in the form of a CSV file that can easily be parsed with code or opened in Excel, LibreOffice etc.
+8. **Optional:** Run `python purge-hits.py` to remove all the hits from the original fasta files. 
